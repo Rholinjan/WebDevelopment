@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-image: url('background_image.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #66FCF1;
+            font-family: Impact, monospace;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .content {
+            text-align: center;
+            padding: 0px;
+        }
+
+        h1 {
+            font-size: 5em;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        .button-container {
+            text-align: right;
+            top: 0;
+            right: 0;
+            padding: 10px;
+        }
+
+        .toggle-button, .hidden-button a {
+            color: #c5c6c7;
+            font-size: 1.2em;
+            text-decoration: none;
+            margin-left: 20px;
+            cursor: pointer;
+            border: 1px solid #66FCF1; /* Add border */
+            padding: 5px 10px; /* Add padding to create some space around the text */
+            transition: background-color 0.3s; /* Add transition for smoother hover effect */
+        }
+
+        .toggle-button:hover, .hidden-button a:hover {
+            background-color: #1B262C; /* Change the background color on hover */
+        }
+
+        .hidden-button {
+            display: none;
+            margin-top: 20px; /* Adjust the margin-top to control spacing */
+        }
+
+        .toggle-checkbox {
+            display: none;
+        }
+
+        .toggle-checkbox:checked + .toggle-button + .hidden-button {
+            display: block;
+        }
+
+        img {
+            width: 700px;
+            height: auto;
+            margin-right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <a href="web site.html" class="toggle-button">Home</a>
+        <a href="More.html" class="toggle-button">More</a>
+        <a href="About.html" class="toggle-button">Contact us</a>
+    </div>
+
+    <div class="container">
+        <img src="my_photo.png" alt="Your Image">
+    
+        <div class="content">
+            <h1>HELLO WELCOME TO MY WEBSITE</h1>
+            <p>I'm Rholin Jan B. Ferrer 20 year's old. if you want to know more about me just click the button below.</p>
+            
+            <input type="checkbox" class="toggle-checkbox" id="toggle-checkbox">
+            <label class="toggle-button" for="toggle-checkbox">I want to know More</label>
+            <div class="hidden-button">
+                <a href="https://maps.app.goo.gl/27SSHeM4Xk9tcGC57" class="button">My current address</a>
+                <a href="school.html" class="button">School Background</a>
+                <a href="chess_page.html" class="button">Hobby</a> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
